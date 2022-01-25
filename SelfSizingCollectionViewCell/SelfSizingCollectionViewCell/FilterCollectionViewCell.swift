@@ -9,8 +9,8 @@ import UIKit
 
 class FilterCollectionViewCell: UICollectionViewCell {
     private var filtLabel: UILabel = UILabel()
-    private var imageView: UIImageView = UIImageView()
     
+    private var button: UIButton = UIButton(type: .system)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,11 +25,23 @@ class FilterCollectionViewCell: UICollectionViewCell {
     
         contentView.layer.cornerRadius = 12
         
+        
+        button.imageView?.image = UIImage(named: "close-4")!
+        button.setImage(UIImage(named: "close-4")!, for: .normal)
+        button.imageView?.contentMode = .scaleAspectFill
+        button.tintColor = UIColor(red: 46/255, green: 78/255, blue: 136/255, alpha: 1)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.imageView?.translatesAutoresizingMaskIntoConstraints = false
+        button.imageView?.widthAnchor.constraint(equalToConstant: 10).isActive = true
+        button.imageView?.heightAnchor.constraint(equalToConstant: 10).isActive = true
+        
+        contentView.addSubview(button)
+
         // adding the subview
-        imageView.image = UIImage(named: "close-4")!
-        imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(imageView)
+        
+        
+        
+        
         
         
         setUpConstraints()
@@ -44,19 +56,28 @@ class FilterCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             filtLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             filtLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-            filtLabel.trailingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: -8),
+            filtLabel.trailingAnchor.constraint(equalTo: button.leadingAnchor, constant: -8),
             filtLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
         ])
         
     
         
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 10),
-            imageView.heightAnchor.constraint(equalToConstant: 10),
-            imageView.centerYAnchor.constraint(equalTo: filtLabel.centerYAnchor),
-            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8)
+            
+            
+            button.centerYAnchor.constraint(equalTo: filtLabel.centerYAnchor),
+            button.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
+            
+            button.widthAnchor.constraint(equalToConstant: 10),
+            button.heightAnchor.constraint(equalToConstant: 10),
+            
+            
+
+            
         ])
 
+        
+        
         
         
     }

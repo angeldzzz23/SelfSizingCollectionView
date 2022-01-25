@@ -72,8 +72,6 @@ class ViewController: UIViewController {
         // TODO 5: Extend collection view delegate.
         filtCollectionView.delegate = self
 
-        
-//
 //
         view.addSubview(filtCollectionView)
         
