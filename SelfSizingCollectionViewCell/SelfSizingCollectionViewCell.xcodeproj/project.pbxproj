@@ -12,6 +12,7 @@
 		1C243EBC279FD94500AD1952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C243EBB279FD94500AD1952 /* ViewController.swift */; };
 		1C243EC1279FD94500AD1952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C243EC0279FD94500AD1952 /* Assets.xcassets */; };
 		1C243EC4279FD94500AD1952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C243EC2279FD94500AD1952 /* LaunchScreen.storyboard */; };
+		1C243ECC279FDB5900AD1952 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C243ECB279FDB5900AD1952 /* FilterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1C243EC0279FD94500AD1952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C243EC3279FD94500AD1952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C243EC5279FD94500AD1952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C243ECB279FDB5900AD1952 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				1C243EB7279FD94500AD1952 /* AppDelegate.swift */,
 				1C243EB9279FD94500AD1952 /* SceneDelegate.swift */,
+				1C243ECB279FDB5900AD1952 /* FilterCollectionViewCell.swift */,
 				1C243EBB279FD94500AD1952 /* ViewController.swift */,
 				1C243EC0279FD94500AD1952 /* Assets.xcassets */,
 				1C243EC2279FD94500AD1952 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			files = (
 				1C243EBC279FD94500AD1952 /* ViewController.swift in Sources */,
 				1C243EB8279FD94500AD1952 /* AppDelegate.swift in Sources */,
+				1C243ECC279FDB5900AD1952 /* FilterCollectionViewCell.swift in Sources */,
 				1C243EBA279FD94500AD1952 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
